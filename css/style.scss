@@ -1,11 +1,46 @@
 // GLOBAL
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-  margin: 0;
   width: 100vw;
   height: 100vh;
   font-family: 'Catamaran', sans-serif;
+}
+
+.Home {
+  height: 100vh;
+  width: 100vw;
+  &-name {
+    position: relative;
+    top: 20vh;
+    text-align: center;
+    font-size: 5vh;
+  }
+  &-title {
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    font-size: 4vh;
+  }
+  &-logoContainer {
+    position: relative;
+    height: 40vh;
+    width: 40vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &-logoMG {
+      position: absolute;
+    }
+    &-logoAnima {
+      width: 60%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }

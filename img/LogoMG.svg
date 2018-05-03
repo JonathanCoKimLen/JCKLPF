@@ -4,30 +4,42 @@
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+
+	@keyframes rotateLeft {
+	  from {transform: rotate(0deg);}
+	  to {transform: rotate(-360deg);}
+	}
+
+	@keyframes rotateRight {
+	  from {transform: rotate(0deg);}
+	  to {transform: rotate(360deg);}
+	}
+
+.Center, .SecondLayer {transform-origin: 50% 50%;animation: rotateLeft 4s linear;}
+.FirstLayer, .ThirdLayer {transform-origin: 50% 50%;animation: rotateRight 4s linear;}
+
 </style>
-<g id="Center">
+<g id="Center" class="Center">
 	<circle class="st0" cx="255.2" cy="255.7" r="36.8"/>
 	<polygon class="st0" points="255.2,209.7 299.4,241.8 282.5,293.8 227.8,293.8 210.9,241.8 	"/>
 	<rect x="218.4" y="219" class="st0" width="73.5" height="73.5"/>
 	<circle class="st0" cx="255.2" cy="255.7" r="52.6"/>
 </g>
-<g id="FirstLayer">
+<g id="FirstLayer" class="FirstLayer">
 	<polygon class="st0" points="255.2,308.2 205.3,271.9 224.4,213.3 286,213.3 305,271.9 	"/>
 	<polygon class="st0" points="255.2,194.3 313.5,236.7 291.2,305.2 219.1,305.2 196.9,236.7 	"/>
 	<polygon class="st0" points="294.5,201.2 318.8,276 255.2,322.3 191.5,276 215.8,201.2 	"/>
 	<circle class="st0" cx="255.2" cy="255.7" r="67.1"/>
-	<polygon class="st0" points="297,313.3 255.2,326.9 213.4,313.3 187.5,277.7 187.5,233.8 213.4,198.2 255.2,184.6 297,198.2 
+	<polygon class="st0" points="297,313.3 255.2,326.9 213.4,313.3 187.5,277.7 187.5,233.8 213.4,198.2 255.2,184.6 297,198.2
 		322.8,233.8 322.8,277.7 	"/>
 	<circle class="st0" cx="255.2" cy="255.7" r="72.2"/>
 </g>
-<g id="SecondLayer">
-	
+<g id="SecondLayer" class="SecondLayer">
 		<rect x="150.7" y="151.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -106.0708 255.3129)" class="st0" width="209" height="209"/>
 	<polygon class="st0" points="255.2,108.8 382,328.5 128.3,328.5 	"/>
 	<circle class="st0" cx="255.2" cy="255.7" r="148"/>
 </g>
-<g id="ThirdLayer">
-	
+<g id="ThirdLayer" class="ThirdLayer">
 		<rect x="106.7" y="107.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -106.0709 255.313)" class="st0" width="297" height="297"/>
 	<circle class="st0" cx="255.2" cy="255.7" r="210"/>
 </g>

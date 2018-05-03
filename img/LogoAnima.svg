@@ -13,18 +13,13 @@
 		100% {opacity: 1;}
 		}
 
-		@keyframes fadeIn {
-		0% {opacity: 0;}
-		100% {opacity: 1;}
-		}
-
 		.stem {
-		animation: fadeIn 4s forwards;
+		animation: fadeIn 2s forwards;
 		}
-		.leaves1 {animation: fadeIn 6s forwards;}
-		.leaves2 {animation: fadeIn 8s forwards;}
-		.leaves3 {animation: fadeIn 10s forwards;}
-		.leaves4 {animation: fadeIn 12s forwards;}
+		.leaves1 {animation: fadeIn 3s forwards;}
+		.leaves2 {animation: fadeIn 4s forwards;}
+		.leaves3 {animation: fadeIn 5s forwards;}
+		.leaves4 {animation: fadeIn 6s forwards;}
 	</style>
 	<g id="Stem" class="stem">
 		<path class="st0" d="M125,170c-4.1,4.1-9,10.4-9,18c0.1,12.7,13.6,17.8,16,32c0.9,5.6,0.4,13.9-7,25"/>
